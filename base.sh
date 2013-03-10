@@ -5,7 +5,7 @@ date > /etc/vagrant_box_build_time
 
 # Fix locale bug
 dpkg-reconfigure locales
-echo "LC_ALL=en_US.UTF-8" >> /etc/defaults/locale
+echo "LC_ALL=en_US.UTF-8" >> /etc/default/locale
 
 # Set up sudo
 cp /etc/sudoers /etc/sudoers.orig
