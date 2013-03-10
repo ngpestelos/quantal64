@@ -30,6 +30,8 @@ Veewee::Session.declare({
   :ssh_guest_port => "22",
   :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
   :shutdown_cmd => "shutdown -P now",
-  :postinstall_files => [ "postinstall.sh"],
+  :postinstall_files => [
+    "base.sh"
+  ],
   :postinstall_timeout => "10000"
 })
