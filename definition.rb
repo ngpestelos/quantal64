@@ -32,6 +32,7 @@ Veewee::Session.declare({
   :shutdown_cmd => "shutdown -P now",
   :postinstall_files => [
     "base.sh",
+    "apt.sh",
     "cleanup.sh"
   ],
   :postinstall_timeout => "10000"
