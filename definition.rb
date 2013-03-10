@@ -31,7 +31,8 @@ Veewee::Session.declare({
   :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
   :shutdown_cmd => "shutdown -P now",
   :postinstall_files => [
-    "base.sh"
+    "base.sh",
+    "cleanup.sh"
   ],
   :postinstall_timeout => "10000"
 })
