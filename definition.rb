@@ -33,6 +33,7 @@ Veewee::Session.declare({
   :postinstall_files => [
     "base.sh",
     "apt.sh",
+    "chef.sh",
     "cleanup.sh"
   ],
   :postinstall_timeout => "10000"
