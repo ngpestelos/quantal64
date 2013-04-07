@@ -28,3 +28,4 @@ rm rubygems-$RUBYGEMS_VERSION.tgz
 
 $GEM install chef --no-ri --no-rdoc
 mkdir -p /etc/chef
+echo 'PATH=$PATH:/opt/ruby/bin/' > /etc/profile.d/vagrantruby.sh
