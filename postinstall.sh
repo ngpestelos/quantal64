@@ -38,4 +38,7 @@ wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/key
 chmod 600 /home/vagrant/.ssh/authorized_keys
 chown -R vagrant /home/vagrant/.ssh
 
+dd if=/dev/zero of=/EMPTY bs=1M
+rm -f /EMPTY
+
 exit
