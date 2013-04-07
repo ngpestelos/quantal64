@@ -2,8 +2,14 @@
 
 date > /etc/vagrant_box_build_time
 
-apt-get -y install linux-headers-$(uname -r) build-essential
-apt-get -y install zlib1g-dev libssl-dev libreadline-gplv2-dev
+dpkg-reconfigure locales
+echo "LC_ALL=en_US.UTF-8" >> /etc/default/locale
+
+apt-get -y install linux-headers-$(uname -r)
+apt-get -y install build-essential
+apt-get -y install zlib1g-dev
+apt-get -y install libssl-dev
+apt-get -y install libreadline-gplv2-dev
 apt-get -y install vim
 apt-get -y install nfs-common
 apt-get -y install dkms
