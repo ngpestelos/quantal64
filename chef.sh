@@ -16,7 +16,7 @@ make
 make install
 cd ..
 rm -rf ruby-$RUBY_VERSION
-rm $RUBY_VERSION.tar.gz
+rm ruby-$RUBY_VERSION.tar.gz
 
 wget http://production.cf.rubygems.org/rubygems/rubygems-$RUBYGEMS_VERSION.tgz
 tar xzf rubygems-$RUBYGEMS_VERSION.tgz
