@@ -5,6 +5,8 @@ date > /etc/vagrant_box_build_time
 dpkg-reconfigure locales
 echo "LC_ALL=en_US.UTF-8" >> /etc/default/locale
 
+apt-get -y update
+apt-get -y upgrade
 apt-get -y install linux-headers-$(uname -r)
 apt-get -y install build-essential
 apt-get -y install zlib1g-dev
@@ -24,5 +26,9 @@ sh /mnt/VBoxLinuxAdditions.run
 umount /mnt
 rm VBoxGuestAdditions_$VBOX_VERSION.iso
 rm /home/vagrant/VBoxGuestAdditions_$VBOX_VERSION.iso
+
+usermod -a -G sudo vagrant
+cp /etc/sudoers /etc/sudoers.orig
+sed -i -e 's/%sudo\tALL=(ALL:ALL) ALL/%sudo\tALL=(ALL:ALL) NOPASSWD:ALL/' /etc/sudoers
 
 exit
