@@ -43,8 +43,6 @@ RUBY=/opt/ruby/bin/ruby
 GEM=/opt/ruby/bin/gem
 RUBYGEMS_VERSION="1.8.25"
 
-cd /tmp
-
 wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-$RUBY_VERSION.tar.gz
 tar xvzf ruby-$RUBY_VERSION.tar.gz
 cd ruby-$RUBY_VERSION
