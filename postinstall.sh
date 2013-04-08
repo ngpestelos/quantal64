@@ -28,6 +28,8 @@ apt-get -y install ssl-cert
 apt-get -y install pkg-config
 apt-get -y install libgdbm-dev
 apt-get -y install libffi-dev
+apt-get -y install curl
+apt-get -y install git-core
 apt-get clean
 
 cd /tmp
