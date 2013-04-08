@@ -9,12 +9,25 @@ apt-get -y update
 apt-get -y upgrade
 apt-get -y install linux-headers-$(uname -r)
 apt-get -y install build-essential
-apt-get -y install zlib1g-dev
-apt-get -y install libssl-dev
-apt-get -y install libreadline-gplv2-dev
+apt-get -y install zlib1g-dev zlib1g
+apt-get -y install libssl-dev openssl
 apt-get -y install vim
 apt-get -y install nfs-common
 apt-get -y install dkms
+apt-get -y install ack
+apt-get -y install libreadline6 libreadline6-dev
+apt-get -y install libyaml-dev
+apt-get -y install libsqlite3-dev sqlite3
+apt-get -y install libxml2-dev libxslt-dev
+apt-get -y install autoconf automake
+apt-get -y install libc6-dev
+apt-get -y install ncurses-dev
+apt-get -y install libtool
+apt-get -y install bison
+apt-get -y install ssl-cert
+apt-get -y install pkg-config
+apt-get -y install libgdbm-dev
+apt-get -y install libffi-dev
 apt-get clean
 
 cd /tmp
