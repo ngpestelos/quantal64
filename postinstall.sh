@@ -76,6 +76,7 @@ rm rubygems-$RUBYGEMS_VERSION.tgz
 
 $GEM install chef --no-ri --no-rdoc
 mkdir -p /etc/chef
+echo 'cookbook_path "/kitchen/cookbooks"' > /etc/chef/solo.rb
 echo 'PATH=$PATH:/opt/ruby/bin/' > /etc/profile.d/vagrantruby.sh
 
 dd if=/dev/zero of=/EMPTY bs=1M
