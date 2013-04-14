@@ -16,8 +16,8 @@
 
 ### Build a new base box (VirtualBox):
 
-    $ bundle exec veewee vbox build 'quantal64'
+    $ bundle exec veewee vbox build quantal64
 
 ### Package an existing box (VirtualBox): 
 
-    $ bundle exec veewee vbox package 'quantal64'
+    $ bundle exec veewee vbox export quantal64
