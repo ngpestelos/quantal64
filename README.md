@@ -17,10 +17,12 @@
 
 ### Build a new base box (VirtualBox)
 
+    $ cd $VEEWEE_DIR
     $ bundle exec veewee vbox build quantal64
 
 ### Package a base box (VirtualBox)
 
+    $ cd $VEEWEE_DIR
     $ bundle exec veewee vbox export quantal64
 
 ### Releases
